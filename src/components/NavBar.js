@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
-  return (
-    <div>NavBar</div>
-  )
-}
+const NavBar = () => (
+  <nav>
+    <Link to="/missions">Missions</Link>
+  </nav>
+);
 
 export default NavBar;
