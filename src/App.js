@@ -1,16 +1,23 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Missions from './components/missions/missions';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MissionPage from './components/missions/MissionPage';
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+    
+      <Router>
       <NavBar />
-      <Routes>
-        <Route path="/missions" element={<Missions />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<h1>hello world</h1>}/>
+          <Route path="/profile" element={
+            <h1>hello pro</h1>
+          }/>
+          <Route path="/missions" element={<MissionPage />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
