@@ -10,3 +10,15 @@ export const setMissions = (missions) => ({
   type: SET_MISSIONS,
   payload: missions,
 });
+export const joinMission = () => ({ type: JOIN_MISSION });
+export const cancelMission = () => ({ type: CANCEL_MISSION });
+
+// Create set mission reducer
+export const setMissionsReducer = (state = [], action = {}) => {
+  switch (action.type) {
+    case SET_MISSIONS:
+      return action.payload;
+    default:
+      return state;
+  }
+};
