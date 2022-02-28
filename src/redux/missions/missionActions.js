@@ -28,8 +28,8 @@ export const fetchMissions = () => async (dispatch) => {
   const response = await fetch(`${BASE_UR}`);
   let data = await response.json();
   data = data.map((item) => ({
-    Id: item.Id,
-    Name: item.Name,
+    mission_Id: item.mission_Id,
+    mission_name: item.mission_name,
     description: item.description,
   }));
   dispatch(setMissions(data));
