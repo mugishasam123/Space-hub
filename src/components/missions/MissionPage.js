@@ -2,10 +2,15 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchMissions } from '../../redux/missions/missionActions';
 
-let API_LOADED = false;
+// const API_LOADED = false;
 
 const MissionPage = () => {
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMissions());
+    // if (!API_LOADED) {
+    // API_LOADED = true;
+  }, [dispatch]);
   const styleContainer = { color: '#000' };
   return (
     <div style={styleContainer}>
