@@ -22,3 +22,16 @@ export const setMissionsReducer = (state = [], action = {}) => {
       return state;
   }
 };
+
+// Fetch data from the date
+export const fetchMissions = () => async (dispatch) => {
+  const response = await fetch(`${BASE_UR}`);
+  let data = await response.json();
+  data = data.map((item) => ({
+    Id: item.Id,
+    Name: item.Name,
+    description: item.description,
+  }));
+  dispatch(setMissions(data));
+  return data;
+};
