@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.rocket {
+    display: flex;
+    height: 170px;
+    gap: 16px;
+    padding: 20px 50px 0 50px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rocket-image {
+    width: 200px;
+    height: 165px;
+}
+
+.reserve-cancel {
+    width: fit-content;
+    padding: 8px;
+    background-color: #4292F3;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
