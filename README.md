@@ -1,17 +1,17 @@
-![](https://img.shields.io/badge/Bookstore-blue)
+![](https://img.shields.io/badge/SpaceHub-blue)
 
-# Bookstore
+# SpaceHub
 
-> Bookstore is an app that allows you to display a list of added books, add new book and remove a book. It is built using React, Redux, and Styled Components 
+> SpaceHub is an app that allows you to display a list of rockets,missions and you can  reserve rockets ,enter missions and cancel reservation ,leave missions using spaceX api. It is built using React and Redux 
 > 
 
-![screenshot](./src/img/screen.png)
+![screenshot](./src/images/screen.png)
 
 <br/>
 
 # Live Demo
 
-[Live Link](https://sambookstore.netlify.app/)
+[Live Link](https://spacehub2.netlify.app/Rockets)
 
 <br/>
 
@@ -19,7 +19,7 @@ Additional description about the project and its features.
 ## Built With
 
 - Major languages (JavaScript)
-- Framework/Libraries (React, Bootstrap)
+- Framework/Libraries (React, Redux)
 - Technologies/tools used 
   
   ``` bash
@@ -47,8 +47,8 @@ To get a local copy up and running follow these simple example steps.
 #### Clone this repository
 
 ```bash
-$ git clone https://github.com/mugishasam123/Bookstore--CMS.git
-$ cd Bookstore--CMS
+$ git clone https://github.com/mugishasam123/Space-hub.git
+$ cd Space-hub
 ```
 #### Run project
 
@@ -66,13 +66,17 @@ $ npm start # this will open it in the browser and enable hot reloading
 - GitHub: [mugishasamuel](https://github.com/mugishasam123)
 - LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
 
+👤 ** Jos Kalenda **
+
+- GitHub: [ Jos Kalenda](https://github.com/joskalenda)
+- Twitter: [ Jos Kalenda](https://twitter.com/joskalenda)
 <br>
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/mugishasam123/Bookstore--CMS/issues).
+Feel free to check the [issues page](https://github.com/mugishasam123/space-hub/issues).
 
 <br>
 
