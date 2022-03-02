@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from '../styles/displayMission.module.css';
+
 const DisplayContainer = ({
   title,
   data,

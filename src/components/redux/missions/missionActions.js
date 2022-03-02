@@ -22,7 +22,6 @@ const setReserved = (state = {}, action) => {
   }
 };
 
-
 // Reducer for mission actions
 export const missionReducer = (state = { loaded: false, data: [] }, action = {}) => {
   switch (action.type) {
@@ -42,7 +41,6 @@ export const missionReducer = (state = { loaded: false, data: [] }, action = {})
   }
 };
 
-
 // Action Creators
 export const setMissions = (missions) => ({
   type: SET_MISSIONS,
@@ -50,7 +48,6 @@ export const setMissions = (missions) => ({
 });
 export const joinMission = (id) => ({ type: JOIN_MISSION, payload: id });
 export const cancelMission = (id) => ({ type: CANCEL_MISSION, payload: id });
-
 
 // Fetch data from the date
 export const fetchMissions = () => async (dispatch) => {
