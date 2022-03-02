@@ -29,3 +29,10 @@
     color: white;
     font-size: 15px;
 }
+
+.reserved {
+    background-color: #27AAA8;
+    color: white;
+    border: 1px;
+    border-radius: 5px;
+}

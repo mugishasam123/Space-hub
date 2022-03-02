@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { fetchRockets } from "./components/redux/rockets/actions/getRockets";
 import Rockets from "./components/Rockets";
 import Missions from "./components/missions/Missions";
+import Profile from "./components/Profile";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -16,12 +17,12 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={(<Rockets/>)} />
-          <Route path="/Rockets" element={(<Rockets/>)} />
+          <Route path="/" element={<Rockets />} />
+          <Route path="/Rockets" element={<Rockets />} />
           <Route path="/Missions" element={<Missions />} />
-          <Route path="/Profile" element={<h1> my profile </h1>} />{" "}
-        </Routes>{" "}
-      </Router>{" "}
+          <Route path="/Profile" element={<Profile />} />
+        </Routes>
+      </Router>
     </>
   );
 };
