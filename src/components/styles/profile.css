@@ -1,18 +1,18 @@
 .reserved-section {
-    display: grid;
-    gap: 11px;
-    width: 37%;
+  display: grid;
+  gap: 11px;
+  width: 37%;
 }
 
 .reserved-rockets {
-    display: grid;
+  display: grid;
 }
 
 .reserved-title {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .reserved-rocket {
-    border: 1px solid grey;
-    padding: 20px;
+  border: 1px solid grey;
+  padding: 20px;
 }

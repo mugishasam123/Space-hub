@@ -1,0 +1,32 @@
+.missions {
+  $gray: rgb(218, 216, 216);
+
+  p {
+    line-height: 1.6;
+  }
+
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr 1fr;
+  background-color: $gray;
+  border: 1px solid $gray;
+  margin: 0 2rem;
+  gap: 1px;
+  border-radius: 0.2rem;
+  overflow: hidden;
+
+  > * {
+    background-color: rgb(240, 240, 240);
+    padding: 0.4rem;
+    margin: 0;
+  }
+
+  @for $i from 1 through 4 {
+    > *:nth-child(#{$i}) {
+      font-weight: bold;
+    }
+
+    > *:nth-child(8n + #{$i}) {
+      background-color: rgb(208, 209, 208);
+    }
+  }
+}
