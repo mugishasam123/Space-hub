@@ -1,13 +1,39 @@
 import React from "react";
-import './styles/rocket.css'
-const Rocket = ({rocket}) => {
+import { useDispatch } from "react-redux";
+import "./styles/rocket.css";
+import { reserveRocket } from "./redux/rockets/actions/reserveRocket";
+import { cancelRocket } from "./redux/rockets/actions/cancelRocket";
+
+const Rocket = ({ rocket }) => {
+  const dispatch = useDispatch();
+  const handleReserve = () => {
+    dispatch(reserveRocket(rocket.id));
+  };
+  const handleCancel = () => {
+    dispatch(cancelRocket(rocket.id));
+  };
+
   return (
     <div className="rocket">
-      <img src={rocket.image} alt="" className="rocket-image"/>
+      <img src={rocket.image} alt="" className="rocket-image" />
       <div className="details">
         <h3 className="title">{rocket.name}</h3>
-        <p className="description">{rocket.description}</p>
-        <button className="reserve-cancel">Reserve Rocket</button>
+
+        <p className="description">
+          {rocket.reserved && (<span className="reserved">Reserved&nbsp;&nbsp;</span> )}<span>{rocket.description}</span>
+        </p>
+
+        {!rocket.reserved && (
+          <button className="reserve-cancel" onClick={handleReserve}>
+            RESERVE ROCKET
+          </button>
+        )}
+
+        {rocket.reserved && (
+          <button className="reserve-cancel" onClick={handleCancel}>
+            CANCEL RESERVATION
+          </button>
+        )}
       </div>
     </div>
   );

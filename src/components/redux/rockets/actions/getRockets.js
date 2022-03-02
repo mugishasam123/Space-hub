@@ -18,6 +18,7 @@ export const fetchRockets = () => (dispatch) => fetch(baseUrl)
                     type: rocket.rocket_type,
                     image: rocket.flickr_images[0],
                     description: rocket.description,
+                    reserved: false,
                 },
             });
         });
