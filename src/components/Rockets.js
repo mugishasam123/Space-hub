@@ -7,10 +7,9 @@ const Rockets = () => {
   const data = useSelector((state) => state.rockets);
   return (
     <section className="rockets">
-      {" "}
       {data.map((item) => (
         <Rocket key={item.id} rocket={item} />
-      ))}{" "}
+      ))}
     </section>
   );
 };
