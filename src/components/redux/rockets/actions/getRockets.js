@@ -5,7 +5,7 @@ const baseUrl = 'https://api.spacexdata.com/v3/rockets';
 const fetchRockets = () => (dispatch) => fetch(baseUrl)
   .then((response) => response.json())
   .then((data) => {
-    (data).forEach((rocket) => {
+    data.forEach((rocket) => {
       dispatch({
         type: ADD_ROCKETS,
         payload: {

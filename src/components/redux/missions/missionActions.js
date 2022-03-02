@@ -37,7 +37,8 @@ export const missionReducer = (state = { loaded: false, data: [] }, action = {})
         ...state,
         data: state.data.map((mission) => setReserved(mission, action)),
       };
-    default: return state;
+    default:
+      return state;
   }
 };
 

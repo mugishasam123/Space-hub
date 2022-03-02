@@ -8,7 +8,7 @@ const Profile = () => {
   const ProfileContainer = {
     display: 'flex',
     justifyContent: 'space-between',
-    margin: '0 2rem',
+    margin: '40px 40px ',
     gap: '2rem',
     flexGrow: 1,
   };
@@ -18,25 +18,29 @@ const Profile = () => {
   const newData = data.filter((rocket) => rocket.reserved === true);
   return (
     <div style={ProfileContainer}>
-      <DisplayContainer
-        title="My Missions"
-        data={reservedMission}
-      />
+      <DisplayContainer title="My Missions" data={reservedMission} />
+      {' '}
       <div className="reserved-section">
-        <h3 className="reserved-title">My Rockets</h3>
+        <h3 className="reserved-title"> My Rockets </h3>
+        {' '}
         {newData ? (
           <div className="reserved-rockets">
+            {' '}
             {newData.map((rocket) => (
               <span key={rocket.id} className="reserved-rocket">
+                {' '}
                 {rocket.name}
+                {' '}
               </span>
             ))}
+            {' '}
           </div>
-
         ) : (
-          <li>No Reserved Rockets to display</li>
+          <li> No Reserved Rockets to display </li>
         )}
+        {' '}
       </div>
+      {' '}
     </div>
   );
 };

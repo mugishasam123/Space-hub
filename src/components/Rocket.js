@@ -21,12 +21,21 @@ const Rocket = ({ rocket }) => {
         <h3 className="title">{rocket.name}</h3>
 
         <p className="description">
-          {rocket.reserved && (<span className="reserved" name="reservedbadge">Reserved&nbsp;&nbsp;</span>)}
+          {rocket.reserved && (
+            <span className="reserved" name="reservedbadge">
+              Reserved&nbsp;&nbsp;
+            </span>
+          )}
           <span>{rocket.description}</span>
         </p>
 
         {!rocket.reserved && (
-          <button type="button" className="reserve-cancel" onClick={handleReserve} name="reservebtn">
+          <button
+            type="button"
+            className="reserve-cancel"
+            onClick={handleReserve}
+            name="reservebtn"
+          >
             RESERVE ROCKET
           </button>
         )}

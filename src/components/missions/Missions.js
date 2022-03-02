@@ -12,14 +12,18 @@ const Missions = () => {
       dispatch(fetchMissions());
     }
   }, [dispatch, loaded]);
-  const loadingMessage = <div> Loading missions...</div>;
+  const loadingMessage = <div> Loading missions... </div>;
 
   const content = (missions) => (
     <div className={styles.missions}>
-      <h2>Mission</h2>
-      <h2>Description</h2>
-      <h2>Status</h2>
+      <h2> Mission </h2>
+      {' '}
+      <h2> Description </h2>
+      {' '}
+      <h2> Status </h2>
+      {' '}
       <div />
+      {' '}
       {missions.map((mission) => (
         <Mission
           key={mission.mission_id}
@@ -29,12 +33,14 @@ const Missions = () => {
           reserved={mission.reserved}
         />
       ))}
+      {' '}
     </div>
   );
 
   return loaded ? (
     <>
       {content(missions)}
+      {' '}
     </>
   ) : loadingMessage;
 };

@@ -18,11 +18,17 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Rockets />} />
+          {' '}
           <Route path="/Rockets" element={<Rockets />} />
+          {' '}
           <Route path="/Missions" element={<Missions />} />
+          {' '}
           <Route path="/Profile" element={<Profile />} />
+          {' '}
         </Routes>
+        {' '}
       </Router>
+      {' '}
     </>
   );
 };

@@ -4,10 +4,7 @@ import { joinMission, cancelMission } from '../redux/missions/missionActions';
 import styles from '../styles/Mission.module.scss';
 
 const Mission = ({
-  name,
-  id,
-  reserved,
-  description,
+  name, id, reserved, description,
 }) => {
   const dispatch = useDispatch();
   const clickHandler = () => {
@@ -21,14 +18,36 @@ const Mission = ({
   const reservedClass = reserved ? styles.reserved : '';
   return (
     <>
-      <h2>{name}</h2>
-      <p>{description}</p>
+      <h2>
+        {' '}
+        {name}
+        {' '}
+      </h2>
+      {' '}
+      <p>
+        {' '}
+        {description}
+        {' '}
+      </p>
+      {' '}
       <div className={styles.status}>
-        <span className={reservedClass}>{reserved ? 'Active Member' : 'NOT MEMBER'}</span>
+        <span className={reservedClass}>
+          {' '}
+          {reserved ? 'Active Member' : 'NOT MEMBER'}
+          {' '}
+        </span>
+        {' '}
       </div>
+      {' '}
       <div className={styles.status}>
-        <button onClick={clickHandler} type="button" className={reservedClass}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
+        <button onClick={clickHandler} type="button" className={reservedClass}>
+          {' '}
+          {reserved ? 'Leave Mission' : 'Join Mission'}
+          {' '}
+        </button>
+        {' '}
       </div>
+      {' '}
     </>
   );
 };
