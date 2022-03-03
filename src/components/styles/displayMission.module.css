@@ -1,0 +1,18 @@
+.mainContainer {
+  display: grid;
+  gap: 11px;
+  width: 37%;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.container {
+  display: grid;
+}
+
+.list {
+  border: 1px solid grey;
+  padding: 20px;
+}

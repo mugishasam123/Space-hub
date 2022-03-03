@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if Rocket renders correctly 1`] = `
+<div
+  className="rocket"
+>
+  <img
+    alt=""
+    className="rocket-image"
+    src="https://test.com"
+  />
+  <div
+    className="details"
+  >
+    <h3
+      className="title"
+    >
+      Rocket
+    </h3>
+    <p
+      className="description"
+    >
+      <span>
+        description
+      </span>
+    </p>
+    <button
+      className="reserve-cancel"
+      name="reservebtn"
+      onClick={[Function]}
+      type="button"
+    >
+      RESERVE ROCKET
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test if Rockets List renders correctly 1`] = `
+<section
+  className="rockets"
+/>
+`;
